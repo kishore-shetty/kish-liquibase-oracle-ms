@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  application.name: kish-profile
+  profiles.active: oracle
+  liquibase:
+    change-log: 'classpath:/db/changelog-master.xml'
+    enabled: true
+
+logging:
+  level:
+    root: INFO
+    com.kish: DEBUG
+    liquibase: DEBUG
